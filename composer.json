@@ -1,6 +1,6 @@
 {
     "name": "passioncoder/simplecurl",
-    "description": "A very simple an minimalistic cURL wrapper for Laravel 4",
+    "description": "A very simple and minimalistic cURL wrapper for Laravel 4",
     "keywords": ["php", "curl", "laravel"],
     "type": "library",
     "license": "MIT",

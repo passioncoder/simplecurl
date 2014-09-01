@@ -1,6 +1,6 @@
 # SimpleCurl for Laravel 4
 
-A very simple an minimalistic [cURL](http://php.net/manual/book.curl.php) wrapper for [Laravel 4](http://laravel.com).
+A very simple and minimalistic [cURL](http://php.net/manual/book.curl.php) wrapper for [Laravel 4](http://laravel.com).
 
 ## Why?
 
@@ -51,11 +51,11 @@ Add the alias to your `app/config/app.php` (optional):
 ```php
 $response = Curl::get($url, [array $params, [array $options]]);
 $response = Curl::post($url, [array $params, [array $options]]);
-
-$url      A valid url
-$params   The get/post parameters as key/value pair
-$options  cURL options as defined here: http://www.php.net/manual/function.curl-setopt.php
 ```
+ * `$url`: A valid url
+ * `$params`: The get/post parameters as key/value pairs
+ * `$options`: [cURL options](http://www.php.net/manual/function.curl-setopt.php) as as key/value pairs
+
 
 **Example:**
 
