@@ -1,0 +1,23 @@
+{
+    "name": "passioncoder/simplecurl",
+    "description": "A very simple an minimalistic cURL wrapper for Laravel 4",
+    "keywords": ["php", "curl", "laravel"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Georg Gradwohl",
+            "email": "me@passioncoder.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ext-curl": "*",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Passioncoder\\Curl\\": "src/"
+        }
+    }
+}
