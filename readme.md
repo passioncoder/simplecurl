@@ -4,11 +4,11 @@ A very simple an minimalistic [cURL](http://php.net/manual/book.curl.php) wrappe
 
 ## Why?
 
+There are a lot of great php HTTP clients out there in the wild. But sometimes you don't want/need the overhead of a full-featured client which forces you to write 15 lines of code to load a RSS feed or retrive data from an REST API.
+
 ```php
 $response = Curl::get('http://example.com/data.json');
 ```
-
-There are a lot of great php HTTP clients out there in the wild. But sometimes you don't want/need the overhead of a full-featured client which forces you to write 15 lines of code to load a RSS feed or retrive data from an REST API.
 
 SimpleCurl is the easy one-liner for this purpose. It's not intended to become the next [guzzle](https://github.com/guzzle/guzzle), nor will it replace the [Zend Http Client](http://framework.zend.com/manual/2.0/en/modules/zend.http.client.html). ;)
 
@@ -55,7 +55,6 @@ $response = Curl::post($url, [array $params, [array $options]]);
 $url      A valid url
 $params   The get/post parameters as key/value pair
 $options  cURL options as defined here: http://www.php.net/manual/function.curl-setopt.php
-
 ```
 
 **Example:**
@@ -67,12 +66,15 @@ try {
 
 } catch (Passioncoder\SimpleCurl\Exception $e) {
 	
-	// curl error 
+	print $e->getMessage();
 }
+
+var_dump($response->header);
+var_dump($response->body);
 
 if ($response->header->http_code == 200) {
 	
-	var_dump($response->body);
+	print 'yeah!';
 }
 ```
 

@@ -10,7 +10,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 	 *
 	 * @var bool
 	 */
-	protected $defer = false;
+	protected $defer = true;
 
 	/**
 	 * Bootstrap the application events.
@@ -31,8 +31,8 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider {
 	{
 		$this->app->bind('Curl', function() {
 
-            return new Curl;
-        });
+			return new Curl;
+		});
 	}
 
 	/**
