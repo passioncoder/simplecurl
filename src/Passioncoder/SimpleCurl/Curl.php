@@ -58,7 +58,7 @@ class Curl {
 		curl_setopt($c, CURLOPT_SSL_VERIFYPEER, 0);
 			
 		if (is_array($options))
-			curl_setopt_array($options);
+			curl_setopt_array($c, $options);
 
 		$query = !empty($params) ? http_build_query($params, '', '&', PHP_QUERY_RFC1738) : null;
 
