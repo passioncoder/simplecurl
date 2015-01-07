@@ -1,0 +1,11 @@
+{
+	"providers": [
+		"Passioncoder\\SimpleCurl\\ServiceProvider"
+	],
+	"aliases": [
+		{
+			"alias": "Curl",
+			"facade": "Passioncoder\\SimpleCurl\\Facade"
+		}
+	]
+}
